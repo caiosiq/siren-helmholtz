@@ -75,8 +75,11 @@ Below is an example showing Re(Ez) and Im(Ez) after 100,000 training steps. The 
 🚀 Setup & Usage
 You can clone and run the code with:
 git clone https://github.com/YOUR_USERNAME/siren-helmholtz.git
+
 cd siren-helmholtz
+
 pip install -r requirements.txt
+
 python train_model.py
 
 To visualize the saved results:
