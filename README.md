@@ -1,7 +1,7 @@
-📡 SIREN-Based PINN for Solving the 2D Complex Helmholtz Equation
+# 📡 SIREN-Based PINN for Solving the 2D Complex Helmholtz Equation
 This project implements a Physics-Informed Neural Network (PINN) using the SIREN (Sinusoidal Representation Networks) architecture to solve the 2D Helmholtz equation with a single point source in free space.
 
-🔬 Overview
+## 🔬 Overview
 This simulation was developed as part of a technical challenge and explores how SIREN architectures can model wave-like solutions governed by the complex Helmholtz equation. The solution is expressed as a complex field Ez = Re(Ez) + i·Im(Ez), and the neural network is trained to minimize the PDE residual, boundary conditions, and source error.
 
 Key features:
@@ -20,7 +20,7 @@ Key features:
 
 
 
-🧠 Model Details
+## 🧠 Model Details
 Architecture: SIREN PINN with sine activations
 
 ω₀: Matches the physical frequency scale of the field
@@ -47,7 +47,7 @@ L1 loss preferred over L2 for convergence
 
 
 
-🗂️ Project Structure
+## 🗂️ Project Structure
 siren-helmholtz/
 
 │
@@ -72,7 +72,7 @@ Below is an example showing Re(Ez) and Im(Ez) after 100,000 training steps. The 
 ![image](https://github.com/user-attachments/assets/8dcf7904-6547-431d-be5f-014a69039342)
 
 
-🚀 Setup & Usage
+## 🚀 Setup & Usage
 You can clone and run the code with:
 git clone https://github.com/YOUR_USERNAME/siren-helmholtz.git
 
@@ -86,21 +86,21 @@ To visualize the saved results:
 python read_model.py
 
 
-🤔 Future Work
+## 🤔 Future Work
 
 GPU-accelerated scaling for higher grid sizes
 Running simulation till higher Epochs
 Integration with DeepXDE-style autograd backend for faster experiments
 
 
-📬 Acknowledgements
+## 📬 Acknowledgements
 This work was originally developed as part of a challenge by KronosAI. Thanks to Ziyi Yin, PhD, for the opportunity and feedback.
 
-💡 Questions?
+## 💡 Questions?
 Reach out to me at caiosiq@mit.edu or open an issue on this repo!
 
 
-🧠 References
+## 🧠 References
 
 SIREN Paper (Sitzmann et al.)
 DeepXDE Framework
