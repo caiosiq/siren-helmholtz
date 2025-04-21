@@ -12,7 +12,9 @@ Key features:
 
 ✅ Sommerfeld boundary condition: ∂E/∂n + i·ωE = 0
 
-✅ Real-valued point source (Jz) represented as a single delta-like numerical spike
+✅ Real-valued point source (Jz) represented as a single delta-like numerical spike as well as a dieletric object in the middle
+
+![image](https://github.com/user-attachments/assets/b7a8ece6-94b8-47d9-89d3-dbb6bf818612)
 
 ✅ Highly modular and easy to expand with additional geometries or media properties
 
@@ -33,6 +35,8 @@ Weighted boundary condition loss (Sommerfeld)
 
 Scaled error at the source location (to amplify learning)
 
+Permittivity: Allows for adding a object in the middle with different dieletric proprieties
+
 Training Strategy:
 
 Epochs: 100,000+
@@ -48,25 +52,24 @@ siren-helmholtz/
 
 │
 
-├── funcs/                  # Common utility functions (loss, physics, geometry)
+├── funcs/                 # Common utility functions (loss, physics, geometry)
 
-├── models/                # Definition of the Siren layers and model
-
-├── own_model/             # Core script for building and training SIREN PINNs
+├── models/                # Saved models from trainings done before
 
 ├── results/               # Saved predictions and output plots
+
+├── testcodes/             # Helper tests to study functionality and convergence
 
 ├── train_model.py         # Main training script
 
 ├── read_model.py          # Script to load and visualize saved models
 
-├── test.py                # Helper tests
-
-├── hyper_parameters_analysis.py  # Sweep script to study convergence
-
 📈 Sample Results
-Below is an example showing Re(Ez) and Im(Ez) after 100,000 training steps. The source is located at (20, 20). The model successfully minimizes Re(Ez) and localizes the field to the imaginary component, as expected for a real Jz source.
+Below is an example showing Re(Ez) and Im(Ez) after 100,000 training steps. The source is located at (20, 20). The model successfully minimizes Re(Ez) and localizes the field to the imaginary component, as expected for a real Jz source. It also starts to create a gradient around Im(Ez)=0, representing wave-like proprieties
 
+![image](https://github.com/user-attachments/assets/3b5c82e8-e009-4727-ac60-1ef17d67ae3e)
+
+![image](https://github.com/user-attachments/assets/8dcf7904-6547-431d-be5f-014a69039342)
 
 
 🚀 Setup & Usage
