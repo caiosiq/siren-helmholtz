@@ -1,0 +1,15 @@
+{
+    "grid_size": [
+        128,
+        128
+    ],
+    "omega": 1.0,
+    "source_pos": [
+        64,
+        64
+    ],
+    "add_dielectric": true,
+    "lambda_bc": 1.0,
+    "epochs": 5000,
+    "model_path": "siren_pinn_trained.pt"
+}

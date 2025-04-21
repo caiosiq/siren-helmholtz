@@ -1,0 +1,22 @@
+{
+    "grid_size": [
+        128,
+        128
+    ],
+    "physical_size": [
+        128.0,
+        128.0
+    ],
+    "omega": 1.0,
+    "source_pos": [
+        64,
+        64
+    ],
+    "add_dielectric": false,
+    "lambda_bc": 0.1,
+    "epochs": 200000,
+    "hidden_layers": 3,
+    "hidden_features": 128,
+    "omega_0": 1.0,
+    "model_path": "siren_pinn_trained.pt"
+}
