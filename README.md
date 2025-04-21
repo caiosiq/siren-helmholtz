@@ -45,14 +45,23 @@ L1 loss preferred over L2 for convergence
 
 🗂️ Project Structure
 siren-helmholtz/
+
 │
+
 ├── funcs/                  # Common utility functions (loss, physics, geometry)
+
 ├── models/                # Definition of the Siren layers and model
+
 ├── own_model/             # Core script for building and training SIREN PINNs
+
 ├── results/               # Saved predictions and output plots
+
 ├── train_model.py         # Main training script
+
 ├── read_model.py          # Script to load and visualize saved models
+
 ├── test.py                # Helper tests
+
 ├── hyper_parameters_analysis.py  # Sweep script to study convergence
 
 📈 Sample Results
